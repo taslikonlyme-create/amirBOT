@@ -60,6 +60,14 @@ export function getUserLevelPrefix(guildId) {
     return `guild:${guildId}:leveling:users:`;
 }
 
+export function getWeeklyLevelingKey(guildId, userId) {
+    return `temp:leveling:weekly:${guildId}:${userId}`;
+}
+
+export function getWeeklyLevelingPrefix(guildId) {
+    return `temp:leveling:weekly:${guildId}:`;
+}
+
 export function getApplicationRolesKey(guildId) {
     return `guild:${guildId}:applications:roles`;
 }
